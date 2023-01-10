@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 abstract class RentalCar {
   late String name;
   late int passengers;
