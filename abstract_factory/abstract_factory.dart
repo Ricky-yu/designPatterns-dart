@@ -27,11 +27,6 @@ class LongFloorplan extends FloorPlan {
       : super(seats, enginePosition);
 }
 
-abstract class Suspension {
-  late SuspensionType suspensionType;
-  Suspension(this.suspensionType);
-}
-
 enum SuspensionType {
   standard('Standard'),
   sports('Firm'),
@@ -39,6 +34,11 @@ enum SuspensionType {
 
   const SuspensionType(this.name);
   final String name;
+}
+
+abstract class Suspension {
+  late SuspensionType suspensionType;
+  Suspension(this.suspensionType);
 }
 
 class RoadSuspension extends Suspension {
@@ -56,6 +56,16 @@ class RaceSuspension extends Suspension {
       : super(suspensionType);
 }
 
+enum Cars {
+  compact('VM Golf'),
+  sports('Porsche Boxter'),
+  suv('Cadillac Escalade'),
+  sportsSuv('Porsche SUV');
+
+  const Cars(this.name);
+  final String name;
+}
+
 class Car {
   final Cars carType;
   final FloorPlan floor;
@@ -68,16 +78,6 @@ class Car {
     print("Engine: ${floor.enginePosition}");
     print("Suspension: ${suspension.suspensionType}");
   }
-}
-
-enum Cars {
-  compact('VM Golf'),
-  sports('Porsche Boxter'),
-  suv('Cadillac Escalade'),
-  sportsSuv('Porsche SUV');
-
-  const Cars(this.name);
-  final String name;
 }
 
 abstract class CarFactory {
