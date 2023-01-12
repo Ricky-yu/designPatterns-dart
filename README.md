@@ -22,7 +22,7 @@
 * [x] [Builder](https://github.com/scottt2/design-patterns-in-dart/tree/master/builder)
 * [x] [Factory Method](https://github.com/Ricky-yu/designPatterns-dart/tree/master/factory_method)
 * [x] [Prototype](https://github.com/scottt2/design-patterns-in-dart/tree/master/prototype)
-* [x] [Singleton](https://github.com/scottt2/design-patterns-in-dart/tree/master/singleton)
+* [x] [Singleton](https://github.com/Ricky-yu/designPatterns-dart/tree/master/singleton)
 
 ### Structural Patterns
 
