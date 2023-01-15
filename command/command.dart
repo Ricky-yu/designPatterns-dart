@@ -7,41 +7,47 @@ class Light {
   void turnOn() => print("$_location Light on!");
 }
 
+enum Speed {
+  off('off'),
+  low('low'),
+  high('high');
+
+  const Speed(this.name);
+  final String name;
+}
+
 class CeilingFan {
   String _location;
-  static final int high = 3;
-  static final int low = 1;
-  static final int off = 0;
-  int _speed = off;
-  int? _prevSpeed = off;
+  Speed _speed = Speed.off;
+  Speed _prevSpeed = Speed.off;
   CeilingFan(this._location);
 
   void setHigh() {
     _prevSpeed = getSpeed();
-    _speed = high;
-    print("$_location CeilingFan's speed is high");
+    _speed = Speed.high;
+    print("$_location CeilingFan's speed is ${_speed.name}");
   }
 
   void setLow() {
     _prevSpeed = getSpeed();
-    _speed = low;
-    print("$_location CeilingFan's speed is low");
+    _speed = Speed.low;
+    print("$_location CeilingFan's speed is ${_speed.name}");
   }
 
   void setOff() {
     _prevSpeed = getSpeed();
-    _speed = off;
+    _speed = Speed.off;
     print("$_location CeilingFan's is off");
   }
 
-  int getSpeed() {
+  Speed getSpeed() {
     return _speed;
   }
 
   void undo() {
-    if (_prevSpeed == CeilingFan.high) {
+    if (_prevSpeed == Speed.high) {
       setHigh();
-    } else if (_prevSpeed == CeilingFan.low) {
+    } else if (_prevSpeed == Speed.low) {
       setLow();
     } else {
       setOff();
