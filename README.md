@@ -30,6 +30,6 @@
 * [x] [Bridge](https://github.com/scottt2/design-patterns-in-dart/tree/master/bridge)
 * [x] [Composite](https://github.com/scottt2/design-patterns-in-dart/tree/master/composite)
 * [x] [Decorator](https://github.com/scottt2/design-patterns-in-dart/tree/master/decorator)
-* [x] [Facade](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
+* [x] [Facade](https://github.com/Ricky-yu/designPatterns-dart/tree/master/facade)
 * [x] [Flyweight](https://github.com/scottt2/design-patterns-in-dart/tree/master/flyweight)
 * [x] [Proxy](https://github.com/scottt2/design-patterns-in-dart/tree/master/proxy)
