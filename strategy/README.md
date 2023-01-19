@@ -10,3 +10,53 @@ Typically the strategy pattern stores a reference to some code in a data structu
 [Wikipedia: Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
 
 [YouTube: Strategy Pattern](https://www.youtube.com/watch?v=v9ejT8FO-7I&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=1&t=10s&ab_channel=ChristopherOkhravi)
+
+``` dart
+abstract class Strategy {
+  int execute(List<int> values);
+}
+
+class SumStrategy implements Strategy {
+  @override
+  int execute(List<int> values) {
+    return values.reduce((value1, value2) => value1 + value2);
+  }
+}
+
+class MultiplyStrategy implements Strategy {
+  @override
+  int execute(List<int> values) {
+    return values.reduce((value1, value2) => value1 * value2);
+  }
+}
+
+class Sequence {
+  List<int> numbers;
+
+  Sequence(this.numbers);
+
+  void addNumber(int value) {
+    numbers.add(value);
+  }
+
+  int compute(Strategy strategy) {
+    return strategy.execute(numbers);
+  }
+}
+
+void main() {
+  Sequence sequence = Sequence([1, 2, 3, 4, 5]);
+
+  Strategy sumStrategy = SumStrategy();
+  print("Sum: ${sequence.compute(sumStrategy)}");
+
+  Strategy multiplyStrategy = MultiplyStrategy();
+  print("Multiply: ${sequence.compute(multiplyStrategy)}");
+}
+```
+
+```
+########OUTPUT########
+Sum: 15
+Multiply: 120
+```
