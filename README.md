@@ -10,7 +10,7 @@
 * [x] [Iterator](https://github.com/scottt2/design-patterns-in-dart/tree/master/iterator)
 * [x] [Mediator](https://github.com/scottt2/design-patterns-in-dart/tree/master/mediator)
 * [x] [Memento](https://github.com/scottt2/design-patterns-in-dart/tree/master/memento)
-* [x] [Observer](https://github.com/scottt2/design-patterns-in-dart/tree/master/observer)
+* [x] [Observer](https://github.com/Ricky-yu/designPatterns-dart/tree/master/observer)
 * [x] [State](https://github.com/scottt2/design-patterns-in-dart/tree/master/state)
 * [x] [Strategy](https://github.com/Ricky-yu/designPatterns-dart/tree/master/strategy)
 * [x] [Template Method](https://github.com/scottt2/design-patterns-in-dart/tree/master/template_method)
