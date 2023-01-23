@@ -11,7 +11,44 @@ class Purchase {
   int price;
   String get description => product;
   int get totalPrice => price;
+
   Purchase(this.product, this.price);
+}
+
+class BasePurchaseDecorator extends Purchase {
+  Purchase purchase;
+  BasePurchaseDecorator(this.purchase)
+      : super(purchase.description, purchase.totalPrice);
+}
+
+class PurchaseWithGiftWrap extends BasePurchaseDecorator {
+  PurchaseWithGiftWrap(super.purchase);
+
+  @override
+  String get description => "${super.description} + giftWrap";
+
+  @override
+  int get totalPrice => super.price + 10;
+}
+
+class PurchaseWithRibbon extends BasePurchaseDecorator {
+  PurchaseWithRibbon(super.purchase);
+
+  @override
+  String get description => "${super.description} + ribbon";
+
+  @override
+  int get totalPrice => super.totalPrice + 5;
+}
+
+class PurchaseWithDelivery extends BasePurchaseDecorator {
+  PurchaseWithDelivery(super.purchase);
+
+  @override
+  String get description => "${super.description} + delivery";
+
+  @override
+  int get totalPrice => super.totalPrice + 20;
 }
 
 class CustomerAccount {
@@ -32,44 +69,6 @@ class CustomerAccount {
     }
     print("Total due : $total");
   }
-}
-
-class BasePurchaseDecorator extends Purchase {
-  Purchase purchase;
-  BasePurchaseDecorator(this.purchase)
-      : super(purchase.description, purchase.totalPrice);
-}
-
-class PurchaseWithGiftWrap extends BasePurchaseDecorator {
-  PurchaseWithGiftWrap(super.purchase);
-
-  @override
-  String get description => "${super.description} + giftWrap";
-
-  @override
-  int get totalPrice => super.price + 10;
-}
-
-class PurchaseWithRibbon extends BasePurchaseDecorator {
-  
-  PurchaseWithRibbon(super.purchase);
-
-  @override
-  String get description => "${super.description} + ribbon";
-
-  @override
-  int get totalPrice => super.totalPrice + 5;
-}
-
-class PurchaseWithDelivery extends BasePurchaseDecorator {
- 
-  PurchaseWithDelivery(super.purchase);
-
-  @override
-  String get description => "${super.description} + delivery";
-
-  @override
-  int get totalPrice => super.totalPrice + 20;
 }
 
 void main() {
