@@ -13,7 +13,7 @@
 * [x] [Observer](https://github.com/Ricky-yu/designPatterns-dart/tree/master/observer)
 * [x] [State](https://github.com/scottt2/design-patterns-in-dart/tree/master/state)
 * [x] [Strategy](https://github.com/Ricky-yu/designPatterns-dart/tree/master/strategy)
-* [x] [Template Method](https://github.com/scottt2/design-patterns-in-dart/tree/master/template_method)
+* [x] [Template Method](https://github.com/Ricky-yu/designPatterns-dart/tree/master/template_method)
 * [x] [Visitor](https://github.com/scottt2/design-patterns-in-dart/tree/master/visitor)
 
 ### Creational
