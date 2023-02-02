@@ -28,7 +28,7 @@
 
 * [x] [Adapter](https://github.com/Ricky-yu/designPatterns-dart/tree/master/adapter)
 * [x] [Bridge](https://github.com/Ricky-yu/designPatterns-dart/tree/master/bridge)
-* [x] [Composite](https://github.com/scottt2/design-patterns-in-dart/tree/master/composite)
+* [x] [Composite](https://github.com/Ricky-yu/designPatterns-dart/tree/master/composite)
 * [x] [Decorator](https://github.com/Ricky-yu/designPatterns-dart/tree/master/decorator)
 * [x] [Facade](https://github.com/Ricky-yu/designPatterns-dart/tree/master/facade)
 * [x] [Flyweight](https://github.com/scottt2/design-patterns-in-dart/tree/master/flyweight)
