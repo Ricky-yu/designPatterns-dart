@@ -6,3 +6,43 @@ For example, the hypothetical algorithm SearchForElement can be implemented gene
 [Wikipedia: Iterator Pattern](https://en.wikipedia.org/wiki/Iterator_pattern)
 
 [YouTube: Iterator Pattern](https://www.youtube.com/watch?v=uNTNEfwYXhI&list=RDCMUCbF-4yQQAWw-UnuCd2Azfzg&index=8)
+
+``` dart
+class ColorsIterator implements Iterator {
+  var _colors = [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Indigo",
+    "Violet"
+  ];
+
+  var _index = 0;
+
+  @override
+  get current => _colors[_index++];
+
+  @override
+  bool moveNext() => _index < _colors.length;
+}
+
+void main() {
+  final colors = ColorsIterator();
+  while (colors.moveNext()) {
+    print(colors.current);
+  }
+}
+```
+
+```
+#####OUTPUT##########
+Red
+Orange
+Yellow
+Green
+Blue
+Indigo
+Violet
+```
