@@ -20,11 +20,8 @@ abstract class Transmitter {
   bool sameEmailDomin(Message message) {
     String dominFromStr = message.from.split('@').last;
     String dominToStr = message.to.split('@').last;
-    if (dominFromStr == dominToStr) {
-      return true;
-    } else {
-      return false;
-    }
+    
+    return dominFromStr == dominToStr;
   }
 }
 
