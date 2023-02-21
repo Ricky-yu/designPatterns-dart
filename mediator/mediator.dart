@@ -51,24 +51,26 @@ class StockMediator implements Mediator {
     newColleague.colleagueCode = colleagues.length;
   }
 
-  void saleOffer(String stock, int shares, int collCode) => _execute(stock, shares, collCode, isbuy: false);
+  void saleOffer(String stock, int shares, int collCode) =>
+      _execute(stock, shares, collCode, isbuy: false);
 
-  void buyOffer(String stock, int shares, int collCode) => _execute(stock, shares, collCode, isbuy: true);
+  void buyOffer(String stock, int shares, int collCode) =>
+      _execute(stock, shares, collCode, isbuy: true);
 
   void _execute(String stock, int shares, int collCode, {required bool isbuy}) {
     bool stockInventory = false;
-
-    for (StockOffer offer in stockSaleOffers) {
+    final stockOffer = isbuy ? stockSaleOffers : stockBuyOffers ;
+    for (StockOffer offer in stockOffer) {
       stockInventory =
           (offer.stockSymbol == stock) && (offer.stockShares == shares);
       if (stockInventory) {
         isbuy
             ? print(
-                "$shares shares of $stock  bought by colleague code ${offer.colleagueCode}")
+                "$shares shares of $stock bought by colleague code ${offer.colleagueCode}")
             : print(
                 "$shares shares of $stock sold to colleague code ${offer.colleagueCode}");
 
-        stockSaleOffers.remove(offer);
+        stockOffer.remove(offer);
         break;
       }
     }
@@ -110,6 +112,7 @@ void main() {
   broker2.saleOffer("JPM", 10);
 
   broker1.buyOffer("SBUX", 10);
+  broker2.saleOffer("SBUX", 10);
 
   spx500.getstockOfferings();
 }
