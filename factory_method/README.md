@@ -63,5 +63,11 @@ void main() {
         "${passengers[i]} passengers: ${selectCar(passengers: passengers[i])} price: ${calculatePrice(passengers: passengers[i], days: days[i])}");
   }
 }
+```
 
+```
+#####OUTPUT#######
+1 passengers: Porsche Boxter price: 200
+3 passengers: VW Golf price: 100
+5 passengers: Cadillac Escalade price: 225
 ```
