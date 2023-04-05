@@ -45,3 +45,12 @@ void main() {
   log2.printLog();
 }
 ```
+
+```
+#######OUTPUT#######
+PRIVATE CONSTRUCTOR RAN
+Log: crate new ServerA
+Log: crate new ServerB
+Log: crate new ServerA
+Log: crate new ServerB
+```
