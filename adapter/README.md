@@ -61,3 +61,10 @@ void main() {
   iPhoneCharger.charge(adapter);
 }
 ```
+
+```
+######OUTPUT######
+Charging OnePlus 5
+Charging IPhone X
+Charging OnePlus 5
+```
