@@ -21,7 +21,7 @@
 * [x] [Abstract Factory](https://github.com/Ricky-yu/designPatterns-dart/tree/master/abstract_factory)
 * [x] [Builder](https://github.com/Ricky-yu/designPatterns-dart/tree/master/builder)
 * [x] [Factory Method](https://github.com/Ricky-yu/designPatterns-dart/tree/master/factory_method)
-* [x] [Prototype](https://github.com/scottt2/design-patterns-in-dart/tree/master/prototype)
+* [x] [Prototype](https://github.com/Ricky-yu/design-patterns-in-dart/tree/master/prototype)
 * [x] [Singleton](https://github.com/Ricky-yu/designPatterns-dart/tree/master/singleton)
 
 ### Structural Patterns
