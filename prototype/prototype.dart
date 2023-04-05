@@ -51,7 +51,7 @@ void main() {
 
   String cloneIsClone =
       sheep == clonedSheep ? "is a clone of" : "is not a clone of";
-  print("\r\nclonedSheep $cloneIsClone sheep.");
+  print("clonedSheep $cloneIsClone sheep.");
 
   String someRectIsClone =
       sheep == someOtherSheep ? "is a clone of" : "is not a clone of";
