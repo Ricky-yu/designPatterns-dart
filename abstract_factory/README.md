@@ -161,3 +161,15 @@ void main() {
   car2.printDetails();
 }
 ```
+
+```
+#####OUTPUT#####
+Car type: Porsche Boxter
+Seats: 2
+Engine: EnginePosition.mid
+Suspension: SuspensionType.sports
+Car type: Porsche SUV
+Seats: 8
+Engine: EnginePosition.front
+Suspension: SuspensionType.sports
+```
