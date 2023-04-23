@@ -14,7 +14,7 @@
 * [x] [State](https://github.com/Ricky-yu/designPatterns-dart/tree/master/state)
 * [x] [Strategy](https://github.com/Ricky-yu/designPatterns-dart/tree/master/strategy)
 * [x] [Template Method](https://github.com/Ricky-yu/designPatterns-dart/tree/master/template_method)
-* [x] [Visitor](https://github.com/scottt2/design-patterns-in-dart/tree/master/visitor)
+* [x] [Visitor](https://github.com/Ricky-yu/designPatterns-dart/tree/master/visitor)
 
 ### Creational
 
