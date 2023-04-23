@@ -32,8 +32,6 @@ class Liquor implements Visitable {
   Liquor({required this.price});
 
   double accept(Visitor visitor) => visitor.liquorVisit(this);
-
-  double getPrice() => price;
 }
 
 class Tobacco implements Visitable {
@@ -43,7 +41,6 @@ class Tobacco implements Visitable {
 
   double accept(Visitor visitor) => visitor.tobaccoVisit(this);
 
-  double getPrice() => price;
 }
 
 class Necessity implements Visitable {
@@ -52,8 +49,6 @@ class Necessity implements Visitable {
   Necessity({required this.price});
 
   double accept(Visitor visitor) => visitor.necessityVisit(this);
-
-  double getPrice() => price;
 }
 
 void main() {
