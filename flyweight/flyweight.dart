@@ -16,9 +16,8 @@ class Developer implements Employee {
   }
 
   @override
-  void task() {
-    print("Developer with skill: " + this.skill + " with Job: " + JOB);
-  }
+  void task() => print("Developer with skill: " + this.skill + " with Job: " + JOB);
+  
 }
 
 class Tester implements Employee {
