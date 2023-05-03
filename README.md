@@ -31,5 +31,5 @@
 * [x] [Composite](https://github.com/Ricky-yu/designPatterns-dart/tree/master/composite)
 * [x] [Decorator](https://github.com/Ricky-yu/designPatterns-dart/tree/master/decorator)
 * [x] [Facade](https://github.com/Ricky-yu/designPatterns-dart/tree/master/facade)
-* [x] [Flyweight](https://github.com/scottt2/design-patterns-in-dart/tree/master/flyweight)
+* [x] [Flyweight](https://github.com/Ricky-yu/designPatterns-dart/tree/master/flyweight)
 * [x] [Proxy](https://github.com/Ricky-yu/designPatterns-dart/tree/master/proxy)
